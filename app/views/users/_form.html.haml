@@ -1,0 +1,15 @@
+= simple_form_for @user, :html => { :class => 'form-horizontal' } do |f|
+  .row
+    .col-md-4
+      = f.input :email, label: "Email"
+  .row
+    .col-md-4
+      = f.input :name, label: "Имя"
+  .row
+    .col-md-4
+      = f.input :password, label: "Пароль"
+  .row
+    .col-md-4
+      = f.input :password_confirm, label: "Подведтвердите пароль"
+  = f.button :submit, "Принять", :class => 'btn-primary'
+  = link_to "Отмена", users_path, :class => 'btn btn-default'

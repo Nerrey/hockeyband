@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # devise_for :users
+
+  devise_for :users, controllers: { sessions: 'devise/sessions' }
+  resources :users, except: [:show]
+  match '/main', :to => "statics#main", :as => :main, via: [:get, :post]
+  match '/admin', :to => "statics#admin", :as => :admin, via: [:get, :post]
+
+  root to: 'statics#main'
 end
