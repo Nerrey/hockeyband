@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 gem 'simple_form'
+gem 'nokogiri'
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
@@ -24,6 +25,7 @@ gem 'capistrano'
 gem 'capistrano-rvm'
 gem 'capistrano-bundler'
 gem 'capistrano-rails'
+gem 'unicorn'
 
 gem "haml-rails"
 gem 'therubyracer', platforms: :ruby
