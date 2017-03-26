@@ -15,24 +15,148 @@
     = javascript_include_tag "application"
     / Le HTML5 shim, for IE6-8 support of HTML elements
     /[if lt IE 9]
-      = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"
+    = javascript_include_tag "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"
+    :javascript
+      $(document).ready(function(){
+        /*carousel*/
+        jQuery('#camera_wrap').camera({
+          loader: false,
+          pagination: true ,
+          minHeight: '200',
+          thumbnails: false,
+          height: '45.125%',
+          caption: false,
+          navigation: false,
+          fx: 'mosaic'
+        });
+              $('.gallery a.gal').touchTouch();
+        $().UItoTop({ easingType: 'easeOutQuart' });
+      });
 
-
-  %body
-    .navbar.navbar-default.navbar-static-top
+  %body#top.page1
+    / ==============================header=================================
+    .slider_wrapper
+      #camera_wrap
+        %div{"data-src" => "/assets/slide.jpg"}
+        %div{"data-src" => "/assets/slide1.jpg"}
+        %div{"data-src" => "/assets/slide2.jpg"}
+      %header
+        #stuck_container
+          .container
+            .row
+              .grid_12
+                %h1
+                  %a{:href => "index.html"}
+                    %img{:alt => "Your Happy Family", :src => "/assets/logo.png"}/
+                .menu_block
+                  %nav.horizontal-nav.full-width.horizontalNav-notprocessed
+                    %ul.sf-menu
+                      %li.current
+                        %a{:href => "index.html"} About us
+                        %ul
+                          %li
+                            %a{:href => "#"} our history
+                          %li
+                            %a{:href => "#"} staff
+                          %li
+                            %a{:href => "#"} news
+                            %ul
+                              %li
+                                %a{:href => "#"} fresh
+                              %li
+                                %a{:href => "#"} archive
+                      %li
+                        %a{:href => "index-1.html"} News & Events
+                      %li
+                        %a{:href => "index-2.html"} Players
+                      %li
+                        %a{:href => "index-3.html"} Blog
+                      %li
+                        %a{:href => "index-4.html"} Contacts
+                  .clear
+                .clear
+              .clear
+    .page1_block
       .container
-        %button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse")
-          %span.icon-bar
-          %span.icon-bar
-          %span.icon-bar
-        %a.navbar-brand(href="/") Hockeyband
-        .navbar-collapse.collapse.navbar-responsive-collapse
-          / %ul.nav.navbar-nav
-          /   %li= link_to "Пользователи", users_path
-
-    .container
-      .row
-        .col-lg-12
-          = bootstrap_flash
-          = yield
-
+        .row
+          .grid_4
+            .block1
+              .title
+                Venues and dates updates
+                %span EuroHockey Indoor Championships
+              Nasetat miaser sams trsusera neuctus aloecase magna oncumsan eras maleonuris fermen.
+              %br/
+              %a.info{:href => "#"} INFORMATION BULLETIN
+          .grid_8
+            .grid_4.alpha
+              .block2
+                .count 1.
+                .extra_wrapper
+                  .title
+                    %a{:href => "#"} Group Tickets
+                  Nertyase riti masertas lertyarsasety kertya asetsetyas aplicabo nerafaes.
+              .block2
+                .count 2.
+                .extra_wrapper
+                  .title
+                    %a{:href => "#"} Upcoming Games
+                  Kertasse asertas lertyarsriti asety kertya aset bfrasa plicabo nerafaes kertyu ersvitae.
+            .grid_4
+              .block2
+                .count 3.
+                .extra_wrapper
+                  .title
+                    %a{:href => "#"} Statistics
+                  Matseariti masertas lertydes paset aplicabo nerafaes lasertyus ersvitae ertyasnemo.
+              .block2
+                .count 4.
+                .extra_wrapper
+                  .title
+                    %a{:href => "#"} Our Sponsors
+                  Fertasa riti masertas lertya sea caplicabo nerafaes asetyseda kertyade asetkery.
+            .clear
+            .alright
+              %a.info{:href => "#"} view more info
+    .slogan
+      .container
+        .row
+          .grid_12
+            %img{:alt => "", :src => "/assets/page1_img.jpg"}/
+            .extra_wrapper
+              .title.col1 Hockey is our life
+              Beciegast nveriti vitaesaert asety kertya aset aplicaboserde nerafae lorem ipsumd oleiuyase ipsumertrias dolore. Vertyu erauas aitaesa ertyasneo eniptaiades. volernatur auteas delrytas miase oditau nsequuntur magni dolores eo qui ratione voluptate.
+              %br/
+              %a{:href => "#"} learn more
+    .main
+      = yield
+    %footer
+      .container
+        .row
+          .grid_12
+            .f_top
+              .fright
+                .title Follow Us
+                sytasertya aset aplicaboes kerasaer
+              .socials
+                %a.fa.fa-twitter{:href => "#"}
+                %a.fa.fa-facebook{:href => "#"}
+                %a.fa.fa-google-plus{:href => "#"}
+                %a.fa.fa-rss{:href => "#"}
+              %ul.f_menu
+                %li.current
+                  %a{:href => "index.html"} About us
+                %li
+                  %a{:href => "index-1.html"} News & Events
+                %li
+                  %a{:href => "index-2.html"} Players
+                %li
+                  %a{:href => "index-3.html"} Blog
+                %li
+                  %a{:href => "index-4.html"} Contacts
+            .copy
+              ©
+              %span#copyright-year
+              %strong •
+              %a{:href => "index-5.html"} Privacy Policy
+              More Hockey Website Templates at
+              %a{:href => "http://www.templatemonster.com/category/hockey-website-templates/", :rel => "nofollow", :target => "_blank"} TemplateMonster.com

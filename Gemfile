@@ -29,7 +29,7 @@ gem 'unicorn'
 
 gem "haml-rails"
 gem 'therubyracer', platforms: :ruby
-gem "twitter-bootstrap-rails"
+# gem "twitter-bootstrap-rails"
 
 group :development, :test do
   gem 'byebug', platform: :mri
