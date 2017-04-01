@@ -35,7 +35,7 @@
 	left: 0;
 	width: 40px;
 	height: 480px;
-	background-image: url('../assets/fancybox.png');
+	background-image: url('../images/fancybox.png');
 }
 
 #fancybox-overlay {
@@ -100,7 +100,7 @@
 	right: -15px;
 	width: 30px;
 	height: 30px;
-	background: transparent url('../assets/fancybox.png') -40px 0px;
+	background: transparent url('../images/fancybox.png') -40px 0px;
 	cursor: pointer;
 	z-index: 1103;
 	display: none;
@@ -310,7 +310,7 @@
 
 /* IE6 */
 
-.fancybox-ie6 #fancybox-close { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/fancy_close.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-close { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/fancy_close.png', sizingMethod='scale'); }
 
 .fancybox-ie6 #fancybox-left-ico { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_left.png', sizingMethod='scale'); }
 .fancybox-ie6 #fancybox-right-ico { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_right.png', sizingMethod='scale'); }

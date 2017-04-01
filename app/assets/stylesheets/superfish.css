@@ -62,7 +62,7 @@ nav{ position:relative;padding: 0px 0 0 0;}
 	left: 50%;
 	margin-left: -4px;
 	width: 9px;
-	background: url(../assets/arrows.png) 0 0 no-repeat;
+	background: url(../images/arrows.png) 0 0 no-repeat;
 	height: 6px;
 	top: -33px;
 	pointer-events: none;
@@ -118,7 +118,7 @@ nav{ position:relative;padding: 0px 0 0 0;}
 }
 
 .sf-menu li ul li+li {
-	background: url(../assets/sub_sep.png) 0 0 repeat-x;
+	background: url(../images/sub_sep.png) 0 0 repeat-x;
 }
 
 .sf-menu li ul li a{
@@ -154,7 +154,7 @@ nav{ position:relative;padding: 0px 0 0 0;}
 }
 
 .sf-menu li ul ul li+li {
-	background-image: url(../assets/sub_sub_sep.png);
+	background-image: url(../images/sub_sub_sep.png);
 }
 
 .sf-menu li ul ul li a:hover

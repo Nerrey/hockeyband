@@ -37,9 +37,9 @@
     / ==============================header=================================
     .slider_wrapper
       #camera_wrap
-        %div{"data-src" => "/assets/slide.jpg"}
-        %div{"data-src" => "/assets/slide1.jpg"}
-        %div{"data-src" => "/assets/slide2.jpg"}
+        %div{"data-src" => asset_path("/images/slide.jpg")}
+        %div{"data-src" => asset_path("/images/slide1.jpg")}
+        %div{"data-src" => asset_path("/images/slide2.jpg")}
       %header
         #stuck_container
           .container
@@ -47,7 +47,7 @@
               .grid_12
                 %h1
                   %a{:href => "index.html"}
-                    %img{:alt => "Your Happy Family", :src => "/assets/logo.png"}/
+                    %img{:alt => "Your Happy Family", :src => asset_path("/images/logo.png")}/
                 .menu_block
                   %nav.horizontal-nav.full-width.horizontalNav-notprocessed
                     %ul.sf-menu
@@ -121,7 +121,7 @@
       .container
         .row
           .grid_12
-            %img{:alt => "", :src => "/assets/page1_img.jpg"}/
+            %img{:alt => "", :src => asset_path("/images/page1_img.jpg")}/
             .extra_wrapper
               .title.col1 Hockey is our life
               Beciegast nveriti vitaesaert asety kertya aset aplicaboserde nerafae lorem ipsumd oleiuyase ipsumertrias dolore. Vertyu erauas aitaesa ertyasneo eniptaiades. volernatur auteas delrytas miase oditau nsequuntur magni dolores eo qui ratione voluptate.

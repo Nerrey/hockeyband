@@ -132,7 +132,7 @@ a.info {
     display: inline-block;
     text-transform: uppercase;
     padding-left: 20px;
-    background: url(../assets/info.png) 0 2px no-repeat;
+    background: url(../images/info.png) 0 2px no-repeat;
     font: bold 14px/13px 'Open Sans', sans-serif;
 }
 
@@ -147,12 +147,12 @@ a.btn {
     color: #2f2f2f;
     margin-top: 26px;
     display: inline-block;
-    background: url(../assets/btn_marker.png) 0 5px no-repeat;
+    background: url(../images/btn_marker.png) 0 5px no-repeat;
 }
 
 a.btn:hover {
     color: #4c8eae;
-    background-image: url(../assets/info.png);
+    background-image: url(../images/info.png);
 }
 
 /****classes****/
@@ -227,13 +227,13 @@ a.btn:hover {
 header {
     position: relative;
     display: block;
-    background: url(../assets/slide.jpg) center 0 no-repeat;
+    background: url(../images/slide.jpg) center 0 no-repeat;
    
 }
 
 #stuck_container {
     padding: 38px 0 39px;
-    background: url(../assets/header_over.png) 0 0 repeat;
+    background: url(../images/header_over.png) 0 0 repeat;
 }
 
 .page1 header {
@@ -268,7 +268,7 @@ header h1 a img {
 .page1_block {
     padding-bottom: 68px;
     padding-top: 90px;
-    background: url(../assets/page1_block.png) 0 bottom repeat-x #4d90af;
+    background: url(../images/page1_block.png) 0 bottom repeat-x #4d90af;
 }
 
 .block1 {
@@ -364,7 +364,7 @@ header h1 a img {
     margin-top: 16px;
     padding: 5px 28px 7px;
     border-radius: 20px;
-    background: url(../assets/slogan_link.png) 0 0 repeat-x;
+    background: url(../images/slogan_link.png) 0 0 repeat-x;
     font: 14px/30px 'Montserrat', sans-serif;
 }
 
@@ -430,7 +430,7 @@ ul.list+a.btn {
 
 a.book {
     margin-top: 16px;
-    background: url(../assets/book.png) 0 2px no-repeat;
+    background: url(../images/book.png) 0 2px no-repeat;
     font-size: 18px;
     padding-bottom: 2px;
     display: inline-block;
@@ -440,7 +440,7 @@ a.book {
 
 a.gal {
     display: block;
-    background: url(../assets/magnify.png) center center no-repeat #222;
+    background: url(../images/magnify.png) center center no-repeat #222;
 }
 
 a.gal img {
@@ -525,7 +525,7 @@ a.various span {
     right: 0;
     top: 0;
     bottom: 0;
-    background: url(../assets/video_magn.png) center center no-repeat;
+    background: url(../images/video_magn.png) center center no-repeat;
 }
 
 a.various:hover span {
@@ -777,7 +777,7 @@ footer {
     border: none;
     text-indent: -999px;
     z-index: 20;
-    background: url(../assets/totop.png) no-repeat left 0;
+    background: url(../images/totop.png) no-repeat left 0;
     transition: 0s ease;
     -o-transition: 0s ease;
     -webkit-transition: 0s ease;
