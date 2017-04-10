@@ -1,0 +1,51 @@
+.content
+  .container
+    .row
+      .grid_8
+        %h2 how to find us
+        .map
+          %figure
+            %iframe{:src => "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Brooklyn,+New+York,+NY,+United+States&aq=0&sll=37.0625,-95.677068&sspn=61.282355,146.513672&ie=UTF8&hq=&hnear=Brooklyn,+Kings,+New+York&ll=40.649974,-73.950005&spn=0.01628,0.025663&z=14&iwloc=A&output=embed"}
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur. ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida.
+          %address
+          %dl
+            %dt
+              8901 Marmora Road,
+              Glasgow, D04 89GR.
+            %dd
+              %span> Freephone:
+              +1 800 559 6580
+            %dd
+              %span> Telephone:
+              +1 800 603 6035
+            %dd
+              %span> FAX:
+              +1 800 889 9898
+            %dd
+              E-mail:
+              %a.col2{:href => "#"} mail@demolink.org
+      .grid_4
+        %h2 feedback
+        %form#form
+          .success_wrapper
+            .success-message Contact form submitted
+          %label.name
+            %input{"data-constraints" => "@Required @JustLetters", :placeholder => "Name:", :type => "text"}/
+            %span.empty-message *This field is required.
+            %span.error-message *This is not a valid name.
+          %label.email
+            %input{"data-constraints" => "@Required @Email", :placeholder => "E-mail:", :type => "text"}/
+            %span.empty-message *This field is required.
+            %span.error-message *This is not a valid email.
+          %label.phone
+            %input{"data-constraints" => "@Required @JustNumbers", :placeholder => "Phone:", :type => "text"}/
+            %span.empty-message *This field is required.
+            %span.error-message *This is not a valid phone.
+          %label.message
+            %textarea{"data-constraints" => "@Required @Length(min=20,max=999999)", :placeholder => "Message:"}
+            %span.empty-message *This field is required.
+            %span.error-message *The message is too short.
+          %div
+            .clear
+            .btns
+              %a.btn{"data-type" => "submit", :href => "#"} send message

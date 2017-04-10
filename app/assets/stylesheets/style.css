@@ -1,6 +1,6 @@
-@import "grid.css";
-@import "font-awesome.css";
-@import "superfish.css";
+@import "../css/grid.css";
+@import "../css/font-awesome.css";
+@import "../css/superfish.css";
 
 @import url(//fonts.googleapis.com/css?family=Audiowide);
 @import url(//fonts.googleapis.com/css?family=Montserrat:400);
