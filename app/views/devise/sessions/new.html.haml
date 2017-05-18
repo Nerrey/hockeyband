@@ -1,0 +1,14 @@
+.container
+  %h2 
+    Вы часть команды 
+    = link_to "hockeband.ru", root_path 
+    ?
+  = form_for resource, as: resource_name, url: session_path(resource_name), html: {id: 'form'} do |f|
+    = f.text_field :email, placeholder: "Логин", label: false, autofocus: true, class: "input-auth"
+    %br
+    = f.text_field :password, placeholder: "Пароль", label: false, type: "password", class: "input-auth"
+    = f.submit "Log in", hidden: true
+    .slogan{style: "padding: 0"}
+      = link_to "Log in", "#", remote: true, onclick: "$('form').submit()"
+%br
+%br

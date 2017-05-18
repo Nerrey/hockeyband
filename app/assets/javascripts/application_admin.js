@@ -12,17 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require superfish
-//= require script
-//= require jquery.mobilemenu
-//= require jquery.equalheights
-//= require jquery-migrate-1.1.1
-//= require jquery.easing.1.3
-//= require jquery.ui.totop
-//= require jquery.fancybox-1.3.4
-
-$(document).ready(function(){
-  $().UItoTop({ easingType: 'easeOutQuart' });
-  $("a.various").fancybox();
-}); 
-
+//= require twitter/bootstrap

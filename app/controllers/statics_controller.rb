@@ -12,7 +12,7 @@ class StaticsController < ApplicationController
   end
 
   def team
-
+    @team = Team.all
   end
 
   def blog
@@ -34,7 +34,7 @@ class StaticsController < ApplicationController
     when "main"
       "application_main"
     when "admin"
-      "admin"
+      "application_admin"
     else
       "application"
     end

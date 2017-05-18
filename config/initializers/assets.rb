@@ -11,7 +11,9 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( 
   camera.css 
   touchTouch.css 
+  application_admin.css
 
   camera.js
   touchTouch.jquery.js
+  application_admin.js
 )

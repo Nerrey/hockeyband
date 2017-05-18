@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'simple_form'
 gem 'nokogiri'
+gem "paperclip"
 
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
@@ -29,7 +30,7 @@ gem 'unicorn'
 
 gem "haml-rails"
 gem 'therubyracer', platforms: :ruby
-# gem "twitter-bootstrap-rails"
+gem "twitter-bootstrap-rails"
 
 group :development, :test do
   gem 'byebug', platform: :mri
