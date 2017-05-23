@@ -4,8 +4,12 @@
       .row
         .grid_12
           %h1
+            %span.title{style: ""}
+              Hockey
+            %span.title.red{style: ""}
+              band
             = link_to root_path do
-              %img{:alt => "Your Happy Family", :src => asset_path("/images/logo.png")}/
+              %img{:alt => "Your Happy Family", height: 58, :src => asset_path("/images/logobw-sm.png")}/
           .menu_block
             %nav.horizontal-nav.full-width.horizontalNav-notprocessed
               %ul.sf-menu
