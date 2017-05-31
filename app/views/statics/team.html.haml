@@ -2,7 +2,7 @@
   .container
     .row
       .grid_12
-        %h2 Тернерская команда
+        %h2 Тренерская команда
       - @team.each_with_index do |trener, i|
         .grid_6
           = image_tag trener.photo.url(:main), class: "img_inner fleft"
