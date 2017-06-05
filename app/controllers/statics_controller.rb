@@ -19,6 +19,10 @@ class StaticsController < ApplicationController
 
   end
 
+  def trainings
+
+  end
+
   def contacts
 
   end
